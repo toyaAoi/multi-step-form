@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url(./assets/fonts/Ubuntu-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url(./assets/fonts/Ubuntu-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url(./assets/fonts/Ubuntu-Regular.ttf) format("truetype");
+}
+
+:root {
+  /* PRIMARY COLORS */
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --light-blue: hsl(206, 94%, 87%);
+  --trawberry-red: hsl(354, 84%, 57%);
+
+  /* NATURAL COLORS */
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+
+  --checked-bg: var(--magnolia);
+  --shadow: hsl(231, 11%, 92%);
+
+  --desktop-bg: url(./assets/images/bg-sidebar-desktop.svg);
+  --mobile-bg: url(./assets/images/bg-sidebar-mobile.svg);
+
+  --arcade: url(./assets/images/icon-arcade.svg);
+  --advanced: url(./assets/images/icon-advanced.svg);
+  --pro: url(./assets/images/icon-pro.svg);
+
+  --thank-you: url(./assets/images/icon-thank-you.svg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Ubuntu-Regular", sans-serif;
+  background-color: var(--magnolia);
+}
+
+h1 {
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.click {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid var(--light-gray);
+}
+
+.click:hover {
+  border-color: var(--marine-blue);
+}
+
+.checked {
+  border-color: var(--marine-blue);
+  background: var(--checked-bg);
+}

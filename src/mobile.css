@@ -1,0 +1,39 @@
+@media (max-width: 600px) {
+  #root {
+    height: 100lvh;
+    position: relative;
+  }
+
+  .container #progress-bar,
+  .cotnainer #form #buttons {
+    position: absolute;
+    left: 0;
+  }
+
+  .container #progress-bar {
+    background: var(--mobile-bg) no-repeat center center/cover;
+    width: 100%;
+    height: auto;
+    top: 0;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    aspect-ratio: 2.5;
+  }
+
+  .container #progress-bar > div[class^="step-"] {
+    display: block;
+  }
+
+  .container #progress-bar > div[class^="step-"] .step-count-w,
+  .container #progress-bar > div[class^="step-"] .step-name {
+    display: none;
+  }
+
+  .container #form #buttons {
+    width: 100%;
+    bottom: auto;
+  }
+}
