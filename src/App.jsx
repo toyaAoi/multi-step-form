@@ -352,9 +352,13 @@ function SelectPlan({ plan, setPlan, yearly, setYearly }) {
             />
             <label htmlFor={pln.name} className="click">
               <img src={pln.icon} alt={pln.name} />
-              <p className="plan">{pln.name}</p>
-              <p className="plan-price">{yearly ? pln.yearly : pln.monthly}</p>
-              {yearly && <p className="discount">2 months free</p>}
+              <div>
+                <p className="plan">{pln.name}</p>
+                <p className="plan-price">
+                  {yearly ? pln.yearly : pln.monthly}
+                </p>
+                {yearly && <p className="discount">2 months free</p>}
+              </div>
             </label>
           </div>
         ))}

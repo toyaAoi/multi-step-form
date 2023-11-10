@@ -2,6 +2,28 @@
   #root {
     height: 100lvh;
     position: relative;
+    display: block;
+
+    /* Gopal */
+    /* max-width: 80vw;
+    min-height: 70vh;
+    margin: auto; */
+  }
+
+  .container {
+    position: absolute;
+    display: block;
+    margin: 6.5rem 1rem 0;
+    padding: 1.5rem;
+    height: auto;
+    width: auto;
+    top: 0;
+    border-radius: 10px;
+
+    /* Gopal */
+    /* max-width: 80vw;
+    min-height: 70vh;
+    margin: auto;*/
   }
 
   .container #progress-bar,
@@ -11,7 +33,7 @@
   }
 
   .container #progress-bar {
-    background: var(--mobile-bg) no-repeat center center/cover;
+    background: var(--mobile-bg) no-repeat center top/cover;
     width: 100%;
     height: auto;
     top: 0;
@@ -21,6 +43,11 @@
     gap: 1rem;
     padding-top: 2rem;
     aspect-ratio: 2.5;
+    z-index: -1;
+    position: fixed;
+
+    /* Gopal */
+    /* z-index: -1; */
   }
 
   .container #progress-bar > div[class^="step-"] {
@@ -32,8 +59,83 @@
     display: none;
   }
 
+  .container #form {
+    padding: 0;
+
+    /* Gopal */
+    /* flex-basis: 100%; */
+  }
+
+  .container #form > div {
+    margin: 0;
+  }
+
+  .container #form > div .form-info {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+  }
+
+  .container #form #personal-info-form input {
+    border-radius: var(--mobile-border-radius);
+  }
+
+  .container #form #personal-info-form input:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Select Plan */
+  .container #form #select-plan .plans-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .container #form #select-plan .plans-container .card {
+    width: 100%;
+  }
+
+  .container #form #select-plan .plans-container .card label.click {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .container #form #select-plan .plans-container .card label.click img {
+    margin-bottom: 0;
+  }
+
+  .container #form #select-plan label.switch.click {
+    border: none;
+  }
+
+  /* Add Ons */
+  .container #form #add-ons .card label.click > div {
+    gap: 1rem;
+  }
+
+  .container #form #add-ons .card:last-child label {
+    margin-bottom: 0;
+  }
+
+  /* BUTTON */
   .container #form #buttons {
     width: 100%;
-    bottom: auto;
+    position: fixed;
+    bottom: 0;
+    background: var(--white);
+    margin: 0;
+    padding: 1rem;
+    z-index: 5;
+
+    /* Gopal */
+    /* bottom: 0;
+    width: 100%;
+    position: fixed; */
   }
+
+  .container #form #buttons button {
+    border-radius: var(--mobile-border-radius);
+  }
+}
+
+.container #submitted {
+  padding: 3rem 0.5rem;
 }

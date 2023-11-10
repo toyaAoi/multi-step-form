@@ -36,6 +36,8 @@
   --pro: url(./assets/images/icon-pro.svg);
 
   --thank-you: url(./assets/images/icon-thank-you.svg);
+
+  --mobile-border-radius: 5px;
 }
 
 * {
