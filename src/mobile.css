@@ -118,6 +118,7 @@
   /* BUTTON */
   .container #form #buttons {
     width: 100%;
+    max-width: none;
     position: fixed;
     bottom: 0;
     background: var(--white);
